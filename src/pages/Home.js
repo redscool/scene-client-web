@@ -1,14 +1,15 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
-
+import Footer from "../components/Footer";
 export default function Home() {
-  const navigate = useNavigate();
-  const handleEvent = () => {
-    navigate("/projectw/event/12/");
-  };
   return (
-    <div>
-      <button onClick={handleEvent}>Test Event</button>
+    <div className="bg-primary h-full w-full flex flex-col">
+      <div className="m-auto">
+        <p className="font-light text-secondary text-2xl m-0">
+          Scene is not available on browser at the moment. <br />
+          Kindly install the app on your mobile.
+        </p>
+      </div>
+      <Footer />
     </div>
   );
 }
