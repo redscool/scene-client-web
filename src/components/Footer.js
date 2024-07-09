@@ -16,7 +16,7 @@ export default function Footer() {
       </div>
       <div className="w-auto h-20 flex flex-col justify-start px-2">
         <p
-          onClick={() => navigate("/terms")}
+          onClick={() => navigate("/tnc")}
           className="w-full font-light text-base self-center mx-auto underline cursor-pointer text-secondary font-sans"
         >
           Terms & Conditions
