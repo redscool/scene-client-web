@@ -2,9 +2,16 @@ import React from "react";
 
 export default function Terms() {
   const date = "July 10, 2024";
+  const company_information = "BaljeetKode";
+  const company_country = "India";
+  const website_name = "Scene";
+  const website_url = "https://www.sceneweb.app/";
+  const copyright_agent_contact_email = "contact@baljeetkode.com";
+  const website_contact_email = "contact@baljeetkode.com";
+  const website_contact_page_url = "https://www.sceneweb.app/contact";
   return (
     <div className="w-full h-full bg-primary flex flex-col items-center">
-      <div className="w-full h-1/6 flex bg-primary-light items-center">
+      <div className="w-full h-20 sm:h-1/6 flex bg-primary-light items-center">
         <div className="w-28 flex justify-center">
           <img src="./logo.svg" className="h-14" />
         </div>
@@ -15,7 +22,7 @@ export default function Terms() {
         </div>
       </div>
       <div className="w-full h-5/6 flex flex-col items-center overflow-y-scroll">
-        <div className="w-5/6 flex flex-col bg-primary-light items-center mt-16 py-12 px-24 text-wrap">
+        <div className="w-full sm:w-5/6 flex flex-col bg-primary-light items-center mt-16  sm:py-12 sm:px-24 py-8 px-8 text-wrap">
           <p className="font-sans text-secondary self-start font-medium text-xl">
             Terms and Conditions
           </p>
@@ -67,11 +74,11 @@ export default function Terms() {
             <li>
               <span className="font-medium"> “Company” </span>
               (referred to as either "the Company", "We", "Us" or "Our" in this
-              Agreement) refers to [COMPANY_INFORMATION].
+              Agreement) refers to {company_information}.
             </li>
             <li>
-              <span className="font-medium"> “Country” </span> refers to
-              [COMPANY_COUNTRY].
+              <span className="font-medium"> “Country” </span> refers to{" "}
+              {company_country}.
             </li>
             <li>
               <span className="font-medium"> “Content” </span> refers to content
@@ -107,7 +114,7 @@ export default function Terms() {
               Website.
             </li>
             <li>
-              <span className="font-medium"> “Terms and Conditions” </span>{" "}
+              <span className="font-medium"> “Terms and Conditions” </span>
               (also referred as "Terms") mean these Terms and Conditions that
               form the entire agreement between You and the Company regarding
               the use of the Service. This Terms and Conditions Agreement was
@@ -123,7 +130,7 @@ export default function Terms() {
             </li>
             <li>
               <span className="font-medium"> “Website” </span> refers to
-              [WEBSITE_NAME], accessible from [WEBSITE_URL]
+              {website_name}, accessible from {website_url}
             </li>
             <li>
               <span className="font-medium"> “You” </span> means the individual
@@ -284,7 +291,7 @@ export default function Terms() {
             or objectionable, and You agree that under no circumstances will the
             Company be liable in any way for any content, including any errors
             or omissions in any content, or any loss or damage of any kind
-            incurred as a result of your use of any content.{" "}
+            incurred as a result of your use of any content.
           </p>
           <p className="font-sans text-secondary self-start font-medium">
             <br />
@@ -332,7 +339,7 @@ export default function Terms() {
             You believe that the copyrighted work has been copied in a way that
             constitutes copyright infringement that is taking place through the
             Service, You must submit Your notice in writing to the attention of
-            our copyright agent via email ([COPYRIGHT_AGENT_CONTACT_EMAIL]) and
+            our copyright agent via email ({copyright_agent_contact_email}) and
             include in Your notice a detailed description of the alleged
             infringement.
             <br />
@@ -381,8 +388,8 @@ export default function Terms() {
               behalf.
             </li>
             <br />
-            You can contact our copyright agent via email
-            ([COPYRIGHT_AGENT_CONTACT_EMAIL]). Upon receipt of a notification,
+            You can contact our copyright agent via email (
+            {copyright_agent_contact_email}). Upon receipt of a notification,
             the Company will take whatever action, in its sole discretion, it
             deems appropriate, including removal of the challenged content from
             the Service.
@@ -761,9 +768,9 @@ export default function Terms() {
             If you have any questions about these Terms and Conditions, You can
             contact us:
             <li>
-              By visiting this page on our website: [WEBSITE_CONTACT_PAGE_URL]{" "}
+              By visiting this page on our website: {website_contact_page_url}
             </li>
-            <li> By sending us an email: [WEBSITE_CONTACT_EMAIL] </li>
+            <li> By sending us an email: {website_contact_email} </li>
           </p>
         </div>
       </div>
