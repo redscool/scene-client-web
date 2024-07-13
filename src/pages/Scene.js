@@ -3,7 +3,7 @@ import Event from "../components/projectW/Event";
 import { Route, Routes } from "react-router-dom";
 import Venue from "../components/projectW/Venue";
 
-export default function ProjectW() {
+export default function Scene() {
   return (
     <Routes>
       <Route exact path="/event/:eventId" element={<Event />} />

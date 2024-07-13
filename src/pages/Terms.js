@@ -11,7 +11,7 @@ export default function Terms() {
   const website_contact_page_url = "https://www.sceneweb.app/contact";
   return (
     <div className="w-full h-full bg-primary flex flex-col items-center">
-      <div className="w-full h-20 sm:h-1/6 flex bg-primary-light items-center">
+      <div className="w-full h-20 sm:h-1/6 flex bg-primary-light items-center border-b-2">
         <div className="w-28 flex justify-center">
           <img src="./logo.svg" className="h-14" />
         </div>
